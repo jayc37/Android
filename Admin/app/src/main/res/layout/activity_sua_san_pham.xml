@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activy.SuaSanPham">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarthemsanpham"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3F51B5"
+        app:title="Thông tin sản phẩm"
+        app:titleTextColor="#E7E1E0">
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_margin="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:inputType="text"
+                android:id="@+id/editsuatensanpham"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:hint="Nhập tên sản phẩm:" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_margin="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="number"
+                android:id="@+id/editsuagiasanpham"
+                android:layout_width="170sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:hint="Nhập giá sản phẩm:" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:id="@+id/imgviewsuasanpham"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+        </ImageView>
+
+
+        <Button
+            android:id="@+id/btnchoosecuasua"
+            android:layout_gravity="center"
+            android:text="Chọn hình ảnh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <Spinner
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textAlignment="center"
+        android:id="@+id/spinnersuasanpham"
+        android:layout_width="150dp"
+        android:layout_height="50dp">
+    </Spinner>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_margin="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:id="@+id/editsuamotasanpham"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:hint="Nhập mô tả sản phẩm:" />
+    </com.google.android.material.textfield.TextInputLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnthemcuasua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="70dp"
+            android:background="#3F51B5"
+            android:padding="10dp"
+            android:text="Sửa"
+            android:textColor="#F3F7F2"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btntrovetspcuasua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:padding="10dp"
+            android:text="Quay lại"
+            android:textColor="#F3F7F2"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

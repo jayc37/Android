@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/s"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".activy.QuanLySanPham">
+    <TextView
+        android:fontFamily="@font/doublefseature20"
+        android:textSize="70dp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+
+        android:gravity="center"
+        android:drawablePadding="16dp"
+        android:textColor="@android:color/white"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <Button
+            android:id="@+id/btnthongkesanpham"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:padding="8dp"
+            android:textColor="#F7F2F2"
+            android:text="statistical" />
+        <Button
+            android:id="@+id/btnthemsanpham"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:padding="8dp"
+            android:textColor="#F3F5F5"
+            android:text="Add product" />
+    </LinearLayout>
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_margin="12dp"
+        android:padding="8dp"
+        android:textColor="#F3F5F5"
+        android:id="@+id/btnqltk"
+        android:text="Admin setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

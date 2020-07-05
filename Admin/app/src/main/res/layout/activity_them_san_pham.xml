@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activy.ThemSanPham">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarthemsanpham"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#3F51B5"
+            app:title="Add product"
+            app:titleTextColor="#F1F0F3">
+        </androidx.appcompat.widget.Toolbar>
+        <TextView
+            android:layout_margin="5sp"
+            android:textSize="30sp"
+            android:text="Type here:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_margin="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:inputType="text"
+                    android:id="@+id/editnhaptensanpham"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:hint="Name:" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_margin="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/editnhapgiasanpham"
+                    android:layout_width="170sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:hint="Price:" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:id="@+id/imgviewthemsanpham"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <Button
+                android:id="@+id/btnchoose"
+                android:layout_gravity="center"
+                android:text="Select Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <Spinner
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:id="@+id/spinnerthemsanpham"
+            android:layout_width="150dp"
+            android:layout_height="50dp">
+        </Spinner>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_margin="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:id="@+id/editnhapmotasanpham"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:hint="Detail:" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnthem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="70dp"
+            android:background="#3F51B5"
+            android:padding="10dp"
+            android:text="Confirm"
+            android:textColor="#FAFCFA"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btntrovetsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:padding="10dp"
+            android:text="Back"
+            android:textColor="#F5F7F5"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>
